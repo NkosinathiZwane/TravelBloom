@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Discover Your Perfect Destination</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-globe-americas"></i> TravelBloom</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with TravelBloom</h1>
+            <p class="hero-description">Discover breathtaking destinations, immerse yourself in diverse cultures, and create unforgettable memories. Let us guide you to your perfect adventure.</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search destinations or keywords..." class="search-input">
+                <button class="search-btn" onclick="searchDestinations()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <button class="cta-button" onclick="scrollToRecommendations()">Book Now</button>
+            
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <h2>Welcome to Your Adventure</h2>
+            <p>At TravelBloom, we believe that every journey should be extraordinary. Whether you're seeking pristine beaches, ancient temples, or vibrant cities, we help you discover destinations that match your wanderlust. Our curated recommendations are designed to inspire and guide you toward experiences that will stay with you forever.</p>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations" id="recommendations">
+        <div class="container">
+            <h2>Featured Destinations</h2>
+            
+            <!-- Beach Recommendations -->
+            <div class="recommendation-category">
+                <h3><i class="fas fa-umbrella-beach"></i> Beach Paradise</h3>
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Maldives Beach" class="destination-img">
+                        <div class="destination-info">
+                            <h4>Maldives</h4>
+                            <p>Crystal clear waters and overwater bungalows await in this tropical paradise. Perfect for honeymoons and luxury getaways.</p>
+                            <div class="destination-features">
+                                <span class="feature-tag">Luxury Resorts</span>
+                                <span class="feature-tag">Snorkeling</span>
+                                <span class="feature-tag">Romance</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Santorini Beach" class="destination-img">
+                        <div class="destination-info">
+                            <h4>Santorini, Greece</h4>
+                            <p>Iconic white-washed buildings overlooking the deep blue Aegean Sea. Experience stunning sunsets and rich Greek culture.</p>
+                            <div class="destination-features">
+                                <span class="feature-tag">Sunsets</span>
+                                <span class="feature-tag">Culture</span>
+                                <span class="feature-tag">Photography</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Temple Recommendations -->
+            <div class="recommendation-category">
+                <h3><i class="fas fa-place-of-worship"></i> Sacred Temples</h3>
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1561362342-6e4a2b60c7aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Angkor Wat" class="destination-img">
+                        <div class="destination-info">
+                            <h4>Angkor Wat, Cambodia</h4>
+                            <p>The world's largest religious monument, showcasing the pinnacle of Khmer architecture and spiritual significance.</p>
+                            <div class="destination-features">
+                                <span class="feature-tag">History</span>
+                                <span class="feature-tag">Architecture</span>
+                                <span class="feature-tag">Sunrise</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2086&q=80" alt="Borobudur Temple" class="destination-img">
+                        <div class="destination-info">
+                            <h4>Borobudur, Indonesia</h4>
+                            <p>Ancient Buddhist temple complex rising majestically above the Java landscape, perfect for spiritual journeys.</p>
+                            <div class="destination-features">
+                                <span class="feature-tag">Buddhism</span>
+                                <span class="feature-tag">Meditation</span>
+                                <span class="feature-tag">Ancient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Country Recommendations -->
+            <div class="recommendation-category">
+                <h3><i class="fas fa-flag"></i> Country Highlights</h3>
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Japan Landscape" class="destination-img">
+                        <div class="destination-info">
+                            <h4>Japan</h4>
+                            <p>Where ancient traditions meet modern innovation. From Tokyo's neon lights to Kyoto's serene temples and Mount Fuji's majesty.</p>
+                            <div class="destination-features">
+                                <span class="feature-tag">Culture</span>
+                                <span class="feature-tag">Technology</span>
+                                <span class="feature-tag">Cherry Blossoms</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2046&q=80" alt="Iceland Landscape" class="destination-img">
+                        <div class="destination-info">
+                            <h4>Iceland</h4>
+                            <p>Land of fire and ice, featuring dramatic waterfalls, geysers, glaciers, and the magical Northern Lights dancing across the sky.</p>
+                            <div class="destination-features">
+                                <span class="feature-tag">Northern Lights</span>
+                                <span class="feature-tag">Glaciers</span>
+                                <span class="feature-tag">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results" id="searchResults" style="display: none;">
+        <div class="container">
+            <h2>Search Results</h2>
+            <div id="resultsContainer"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-globe-americas"></i> TravelBloom</h3>
+                    <p>Your gateway to extraordinary adventures around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TravelBloom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="js/script.js"></script>
+</body>
+</html>
